@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basket</title>
+    <link rel="stylesheet" href="style22.css">
+    <script src="https://kit.fontawesome.com/7aae2eb976.js" crossorigin=""></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__topLink">
+                <a href="#" class="header__link"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" class="header__link"><i class="fab fa-vk"></i></a>
+                <a href="#" class="header__link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="header__link"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+            </div>
+            <div class="header__topInput">
+                <input type="text" class="header__top_input">
+            </div>
+            <div>
+                <h3 class="heder_topFone">Тел.: 8-800-2000-100</h3>
+            </div>
+        </div>
+        <div class="header__bot">
+            <div class="header__bottomMenu">
+                <ul class="header__bottom_list">
+                    <a href="#" class="header__bottom_link">
+                        <li class="header__bottom_text">Главная</li>
+                    </a>
+                    <a href="#" class="header__bottom_link">
+                        <li class="header__bottom_text">Меню</li>
+                    </a>
+                    <a href="#" class="header__bottom_link">
+                        <li class="header__bottom_text">О компании</li>
+                    </a>
+                    <a href="#" class="header__bottom_link">
+                        <li class="header__bottom_text">Контакты</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="header__bottomButton">
+            <button class="cart-button button" type="button" id="basket-btn">Корзина</button>
+        </div>
+    </header>
+    <main>
+        <section class="product-card">
+            <a class="product-card-section__box" href="#" target="blanck">
+                <aside>
+                    <img src="burger/1.jpg" alt="1" height="370">
+                    <button class="product-card-section_btn-order" data-product-name='burgertwo'
+                        onclick="addItemToCart()">Заказать</button>
+                    <p>Двойной бургер</p>
+                    <p>Цена: 500руб.</p>
+                    <span>с говядиной и солёным огурчиком</span>
+                </aside>
+            </a>
+            <a class="product-card-section__box" href="#" target="blanck">
+                <aside>
+                    <img src="burger/2.jpg" alt="handmade marshmallows зефир ручной работы candy bar" height="370">
+                    <button class="product-card-section_btn-order" data-product-name='burger'
+                        onclick="addItemToCart()">Заказать</button>
+                    <div class="product-card-section__box__icons">
+                    </div>
+                    <p>Классический бургер</p>
+                    <p>Цена: 250руб.</p>
+                    <span>Бургер говядиной и сыром</span>
+                </aside>
+            </a>
+            <a class="product-card-section__box" href="#" target="blanck">
+                <aside>
+                    <img src="burger/3.jpg" alt="handmade marshmallows зефир ручной работы candy bar" height="370">
+                    <button class="product-card-section_btn-order" data-product-name='chickenburger'
+                        onclick="addItemToCart()">Заказать</button>
+                    <p>ЧикенБургер</p>
+                    <p>Цена: 200руб.</p>
+                    <span>Бургер с курицей и зеленью</span>
+                </aside>
+            </a>
+        </section>
+
+    </main>
+
+    <div id="goods-list-section" class="goods-list">
+        <div id="goods-list-section__modal">
+            <input type="submit" value="X" id="goods-list-section__delete">
+            <h3 id="goods-list_head-line">Корзина</h3>
+            <div id="goods-list__product-box"></div>
+            <p id="goods-list__total"></p>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="container">
+            <h5 class="text-center">Подсчёт каллорий</h5><br>
+            <div class="form_box">
+                <form action="#" id="form">
+                    <!-- Size -->
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text label">Размер бургера</div>
+                        </div>
+                        <select class="form-control " id="size" name="size"></select>
+                    </div>
+
+                    <!-- Stuffing -->
+                    <div class="input-group">
+                        <div class="input-group-prepend ">
+                            <div class="input-group-text label">Выбор начинки</div>
+                        </div>
+                        <select class="form-control " id="stuffing" name="stuffing">
+                        </select>
+                    </div>
+                    <!-- Toppings -->
+                    <div class="px-2 " id="topping">
+                    </div>
+                    <!-- Totals -->
+                    <div class="total">
+                        <div class="calorie"></div>
+                        <div class="price"></div>
+                    </div>
+                    <button type="button" class="btn"
+                        onclick="alert('Подтвердите пожалуйста Ваш заказ!');">Заказать</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <p class="footer__text"> &#169; Eburg 2021</p>
+        <div class="header__topLink">
+            <a href="#" class="header__link"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="header__link"><i class="fab fa-vk"></i></a>
+            <a href="#" class="header__link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="header__link"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+
+    <script src="script22.js" defer></script>
+    <script src="script2.js"></script>
+
+</body>
+
+</html>
