@@ -1,0 +1,48 @@
+.button {
+    padding: 20px;
+    background-color: rgba(0, 30, 128, 0.577);
+}
+
+.form-box {
+    border-color: red;
+    color: red;
+}
+
+.form-box {
+    border-color: red;
+    color: red;
+}
+
+.input_error {
+    border-color: red;
+    color: red;
+}
+
+.p_error {
+    border-color: red;
+    color: red;
+}
+
+.form-box {
+    color: red;
+}
+
+.p_error {
+    color: red;
+}
+
+.form-box {
+    color: red;
+}
+
+.error-text {
+    color: red;
+}
+
+.box-next-ex {
+    display: none;
+}
+
+.box-next-ex span {
+    color: black;
+}
